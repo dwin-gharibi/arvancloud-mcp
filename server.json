@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.dwin-gharibi/arvancloud-mcp",
+  "description": "Control the whole ArvanCloud platform (Cloud Server, CDN, DNS, Object Storage, VOD, Live) plus a cloud-DevOps toolbox (provisioning, Kubernetes, IaC, security, networking, tasks) over MCP.",
+  "repository": {
+    "url": "https://github.com/dwin-gharibi/arvancloud-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "arvancloud-mcp",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "ARVAN_API_KEY",
+          "description": "ArvanCloud machine-user access key (e.g. 'Apikey xxxxx').",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "ARVAN_DEFAULT_REGION",
+          "description": "Default IaaS region, e.g. ir-thr-c2.",
+          "isRequired": false
+        },
+        {
+          "name": "ARVAN_ENABLED_SERVICES",
+          "description": "Comma list of tool groups to expose, or 'all'.",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

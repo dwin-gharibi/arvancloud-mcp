@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arvancloud-mcp"
+version = "0.1.0"
+description = "Model Context Protocol (MCP) server for the ArvanCloud platform — Cloud Server/IaaS, CDN, Cloud DNS, VOD and more."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Dwin Gharibi" }]
+keywords = ["mcp", "arvancloud", "cloud", "cdn", "dns", "iaas", "vod", "llm", "claude"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp>=1.27",
+    "httpx>=0.27",
+    "boto3>=1.34",
+    "asyncssh>=2.14",
+    "dnspython>=2.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "pytest-cov>=5.0",
+    "respx>=0.21",
+    "ruff>=0.6",
+    "mypy>=1.10",
+]
+
+[project.scripts]
+arvancloud-mcp = "arvancloud_mcp.server:main"
+
+[project.urls]
+Homepage = "https://www.arvancloud.ir"
+"API Docs" = "https://docs.arvancloud.ir/en/developer-tools/api/api-usage"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arvancloud_mcp"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+files = ["src/arvancloud_mcp"]
+
+[tool.coverage.run]
+source = ["arvancloud_mcp"]
+branch = true
