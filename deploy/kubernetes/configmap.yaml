@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: arvancloud-mcp-config
+  namespace: arvancloud-mcp
+  labels:
+    app.kubernetes.io/name: arvancloud-mcp
+data:
+  ARVAN_TRANSPORT: "streamable-http"
+  ARVAN_HOST: "0.0.0.0"
+  ARVAN_PORT: "8000"
+  ARVAN_STATELESS_HTTP: "true"
+  ARVAN_JSON_RESPONSE: "true"
+  ARVAN_ENABLED_SERVICES: "all"
+  # ARVAN_DEFAULT_REGION: "ir-thr-c2"
+  # ARVAN_S3_REGION: "ir-thr-at1"

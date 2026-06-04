@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: arvancloud-mcp
+  namespace: arvancloud-mcp
+  labels:
+    app.kubernetes.io/name: arvancloud-mcp
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: mcp.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: arvancloud-mcp
+                port:
+                  number: 80
+  # tls:
+  #   - hosts: ["mcp.example.com"]
+  #     secretName: arvancloud-mcp-tls
