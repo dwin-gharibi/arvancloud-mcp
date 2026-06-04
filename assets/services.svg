@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="434" viewBox="0 0 888 434" font-family="Helvetica, Arial, sans-serif">
+<rect width="888" height="434" rx="16" fill="#0b1f3a"/>
+<text x="444.0" y="40" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">21 service groups · 230+ tools</text>
+<rect x="20" y="64" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="42" cy="92.0" r="6" fill="#1e63c4"/>
+<text x="60" y="87" fill="#ffffff" font-size="15" font-weight="600">compute</text>
+<text x="60" y="106" fill="#9cc0f5" font-size="12">Cloud servers</text>
+<rect x="236" y="64" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="258" cy="92.0" r="6" fill="#1e63c4"/>
+<text x="276" y="87" fill="#ffffff" font-size="15" font-weight="600">network</text>
+<text x="276" y="106" fill="#9cc0f5" font-size="12">Networking</text>
+<rect x="452" y="64" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="474" cy="92.0" r="6" fill="#1e63c4"/>
+<text x="492" y="87" fill="#ffffff" font-size="15" font-weight="600">storage</text>
+<text x="492" y="106" fill="#9cc0f5" font-size="12">Block volumes</text>
+<rect x="668" y="64" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="690" cy="92.0" r="6" fill="#1e63c4"/>
+<text x="708" y="87" fill="#ffffff" font-size="15" font-weight="600">objectstorage</text>
+<text x="708" y="106" fill="#9cc0f5" font-size="12">S3 storage</text>
+<rect x="20" y="136" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="42" cy="164.0" r="6" fill="#1e63c4"/>
+<text x="60" y="159" fill="#ffffff" font-size="15" font-weight="600">cdn</text>
+<text x="60" y="178" fill="#9cc0f5" font-size="12">CDN / WAF</text>
+<rect x="236" y="136" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="258" cy="164.0" r="6" fill="#1e63c4"/>
+<text x="276" y="159" fill="#ffffff" font-size="15" font-weight="600">dns</text>
+<text x="276" y="178" fill="#9cc0f5" font-size="12">Cloud DNS</text>
+<rect x="452" y="136" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="474" cy="164.0" r="6" fill="#1e63c4"/>
+<text x="492" y="159" fill="#ffffff" font-size="15" font-weight="600">vod</text>
+<text x="492" y="178" fill="#9cc0f5" font-size="12">Video on demand</text>
+<rect x="668" y="136" width="200" height="56" rx="12" fill="#11366b" stroke="#1e63c4" stroke-width="2"/>
+<circle cx="690" cy="164.0" r="6" fill="#1e63c4"/>
+<text x="708" y="159" fill="#ffffff" font-size="15" font-weight="600">live</text>
+<text x="708" y="178" fill="#9cc0f5" font-size="12">Live streaming</text>
+<rect x="20" y="208" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="42" cy="236.0" r="6" fill="#0aa1a8"/>
+<text x="60" y="231" fill="#ffffff" font-size="15" font-weight="600">provision</text>
+<text x="60" y="250" fill="#9cc0f5" font-size="12">One-call provision</text>
+<rect x="236" y="208" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="258" cy="236.0" r="6" fill="#0aa1a8"/>
+<text x="276" y="231" fill="#ffffff" font-size="15" font-weight="600">ssh</text>
+<text x="276" y="250" fill="#9cc0f5" font-size="12">Remote exec</text>
+<rect x="452" y="208" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="474" cy="236.0" r="6" fill="#0aa1a8"/>
+<text x="492" y="231" fill="#ffffff" font-size="15" font-weight="600">k8s</text>
+<text x="492" y="250" fill="#9cc0f5" font-size="12">Kubernetes / Helm</text>
+<rect x="668" y="208" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="690" cy="236.0" r="6" fill="#0aa1a8"/>
+<text x="708" y="231" fill="#ffffff" font-size="15" font-weight="600">iac</text>
+<text x="708" y="250" fill="#9cc0f5" font-size="12">Terraform / IaC</text>
+<rect x="20" y="280" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="42" cy="308.0" r="6" fill="#0aa1a8"/>
+<text x="60" y="303" fill="#ffffff" font-size="15" font-weight="600">security</text>
+<text x="60" y="322" fill="#9cc0f5" font-size="12">Scan &amp; harden</text>
+<rect x="236" y="280" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="258" cy="308.0" r="6" fill="#0aa1a8"/>
+<text x="276" y="303" fill="#ffffff" font-size="15" font-weight="600">net</text>
+<text x="276" y="322" fill="#9cc0f5" font-size="12">Net diagnostics</text>
+<rect x="452" y="280" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="474" cy="308.0" r="6" fill="#0aa1a8"/>
+<text x="492" y="303" fill="#ffffff" font-size="15" font-weight="600">git</text>
+<text x="492" y="322" fill="#9cc0f5" font-size="12">Git</text>
+<rect x="668" y="280" width="200" height="56" rx="12" fill="#11366b" stroke="#0aa1a8" stroke-width="2"/>
+<circle cx="690" cy="308.0" r="6" fill="#0aa1a8"/>
+<text x="708" y="303" fill="#ffffff" font-size="15" font-weight="600">tasks</text>
+<text x="708" y="322" fill="#9cc0f5" font-size="12">Background jobs</text>
+<rect x="20" y="352" width="200" height="56" rx="12" fill="#11366b" stroke="#6b5bd6" stroke-width="2"/>
+<circle cx="42" cy="380.0" r="6" fill="#6b5bd6"/>
+<text x="60" y="375" fill="#ffffff" font-size="15" font-weight="600">notify</text>
+<text x="60" y="394" fill="#9cc0f5" font-size="12">Notifications</text>
+<rect x="236" y="352" width="200" height="56" rx="12" fill="#11366b" stroke="#6b5bd6" stroke-width="2"/>
+<circle cx="258" cy="380.0" r="6" fill="#6b5bd6"/>
+<text x="276" y="375" fill="#ffffff" font-size="15" font-weight="600">observability</text>
+<text x="276" y="394" fill="#9cc0f5" font-size="12">Metrics / audit</text>
+<rect x="452" y="352" width="200" height="56" rx="12" fill="#11366b" stroke="#6b5bd6" stroke-width="2"/>
+<circle cx="474" cy="380.0" r="6" fill="#6b5bd6"/>
+<text x="492" y="375" fill="#ffffff" font-size="15" font-weight="600">docs</text>
+<text x="492" y="394" fill="#9cc0f5" font-size="12">Docs search</text>
+<rect x="668" y="352" width="200" height="56" rx="12" fill="#11366b" stroke="#6b5bd6" stroke-width="2"/>
+<circle cx="690" cy="380.0" r="6" fill="#6b5bd6"/>
+<text x="708" y="375" fill="#ffffff" font-size="15" font-weight="600">common</text>
+<text x="708" y="394" fill="#9cc0f5" font-size="12">request + doctor</text>
+</svg>

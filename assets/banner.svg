@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-label="ArvanCloud MCP">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f3a"/>
+      <stop offset="0.55" stop-color="#11366b"/>
+      <stop offset="1" stop-color="#1e63c4"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39d0d8"/>
+      <stop offset="1" stop-color="#5b8cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="200" rx="18" fill="url(#bg)"/>
+  <!-- cloud mark -->
+  <g transform="translate(60,70)" fill="url(#accent)">
+    <ellipse cx="46" cy="44" rx="46" ry="26"/>
+    <circle cx="26" cy="34" r="20"/>
+    <circle cx="62" cy="26" r="26"/>
+    <rect x="0" y="40" width="92" height="26" rx="13"/>
+  </g>
+  <text x="180" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#ffffff">ArvanCloud MCP</text>
+  <text x="182" y="128" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#bcd3ff">Control the whole ArvanCloud platform — and your cloud DevOps — over MCP</text>
+  <text x="182" y="160" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#7fa8e6">Cloud Server · CDN · DNS · Object Storage · VOD/Live · K8s · IaC · Security · SSH · Tasks</text>
+</svg>
