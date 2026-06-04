@@ -1,0 +1,60 @@
+image:
+  repository: arvancloud-mcp
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaCount: 2
+
+config:
+  ARVAN_TRANSPORT: "streamable-http"
+  ARVAN_HOST: "0.0.0.0"
+  ARVAN_PORT: "8000"
+  ARVAN_STATELESS_HTTP: "true"
+  ARVAN_JSON_RESPONSE: "true"
+  ARVAN_ENABLED_SERVICES: "all"
+  # ARVAN_DEFAULT_REGION: "ir-thr-c2"
+
+secrets:
+  ARVAN_API_KEY: ""
+  ARVAN_S3_ACCESS_KEY: ""
+  ARVAN_S3_SECRET_KEY: ""
+existingSecret: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: "1"
+    memory: 512Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 70
+  targetMemoryUtilizationPercentage: 80
+
+ingress:
+  enabled: false
+  className: nginx
+  host: mcp.example.com
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+  tls: false
+  tlsSecretName: arvancloud-mcp-tls
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 10001
+  fsGroup: 10001
+
+securityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  capabilities:
+    drop: ["ALL"]

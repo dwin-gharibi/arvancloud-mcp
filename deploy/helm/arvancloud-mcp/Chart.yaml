@@ -1,0 +1,13 @@
+apiVersion: v2
+name: arvancloud-mcp
+description: ArvanCloud MCP server — control the whole ArvanCloud platform over MCP.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - mcp
+  - arvancloud
+  - cloud
+home: https://www.arvancloud.ir
+sources:
+  - https://github.com/dwin-gharibi/arvancloud-mcp

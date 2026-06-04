@@ -1,0 +1,20 @@
+ArvanCloud MCP is deployed.
+
+Service: {{ include "arvancloud-mcp.fullname" . }} (port {{ .Values.service.port }})
+Transport: streamable-http at path /mcp
+
+{{- if .Values.ingress.enabled }}
+URL: http{{ if .Values.ingress.tls }}s{{ end }}://{{ .Values.ingress.host }}/mcp
+{{- else }}
+Port-forward to try it locally:
+  kubectl -n {{ .Release.Namespace }} port-forward svc/{{ include "arvancloud-mcp.fullname" . }} 8000:{{ .Values.service.port }}
+  # then point your MCP client at http://localhost:8000/mcp
+{{- end }}
+
+{{- if not .Values.existingSecret }}
+{{- if not .Values.secrets.ARVAN_API_KEY }}
+
+WARNING: No ARVAN_API_KEY set. Set it with:
+  helm upgrade {{ .Release.Name }} ... --set secrets.ARVAN_API_KEY='Apikey ...'
+{{- end }}
+{{- end }}
