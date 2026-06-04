@@ -1,0 +1,15 @@
+services:
+  arvancloud-mcp:
+    build: .
+    image: arvancloud-mcp:latest
+    container_name: arvancloud-mcp
+    restart: unless-stopped
+    environment:
+      ARVAN_API_KEY: ${ARVAN_API_KEY:?set ARVAN_API_KEY in your environment or .env}
+      ARVAN_DEFAULT_REGION: ${ARVAN_DEFAULT_REGION:-}
+      ARVAN_ENABLED_SERVICES: ${ARVAN_ENABLED_SERVICES:-all}
+      ARVAN_TRANSPORT: streamable-http
+      ARVAN_HOST: 0.0.0.0
+      ARVAN_PORT: "8000"
+    ports:
+      - "8000:8000"
