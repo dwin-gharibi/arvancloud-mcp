@@ -398,5 +398,5 @@ badge, then `git tag v0.1.0 && git push --tags`.
 MIT — see [LICENSE](LICENSE).
 
 <p align="center">
-  <img src="assets/logo.svg" alt="ArvanCloud Logo" width="100%">
+  <img src="assets/logo.svg" alt="ArvanCloud Logo" width="40%">
 </p>
